@@ -19,7 +19,7 @@ def load_saved_params():
         iter = int(op.splitext(op.basename(f))[0].split("_")[2])
         if (iter > st):
             st = iter
-
+ 
     if st > 0:
         params_file = "saved_params_%d.npy" % st
         state_file = "saved_state_%d.pickle" % st
